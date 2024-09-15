@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROFESSINAL HELP</title>
+    <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" type="text/css" href="version_3.css">
+</head>
+<body>
+
+
+    <nav class="navbar">
+    <div class="navbar-container">
+      <img src="./IMAGES/LOGO.png" alt="LOGO" id="LOGO">
+      <ul>
+        <li><a href="home.html"><img src="./IMAGES/HOME-ICON.png" class="icon" alt=""></a></li>
+        <li><a href="profile.html"><img src="./IMAGES/PROFILE-ICON.png" class="icon" alt=""></a></li>
+        <li id="logout"><a href="#" onclick="logout()"><img src="./IMAGES/LOGOUT-ICON.png" class="icon" alt=""></a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+    <h1>Mental Health Services Near You</h1>
+    <div id="places-list"></div>
+
+<div id="bottom-bar">
+    <button class="bar-btn active" id="professional-help" onclick="professional_help()">Proffesinal</button>
+    <button class="bar-btn" id="yt-videos" onclick="helpful_links()">YouTube</button>
+    <button class="bar-btn" id="chat-bot">Chat</button>
+    <button class="bar-btn" id="mood-monitor">Mood</button>
+    <button class="bar-btn" id="quiz">Quiz</button>
+  </div>
+
+
+  <script src="script.js"></script>
+  <script src="version_3.js"></script>
+    <script>
+        // Function to fetch the current user's location
+        function getUserLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(fetchPlacesData, showError);
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+        }
+
+        // Function to fetch nearby places using Foursquare API
+        function fetchPlacesData(position) {
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
+
+            const apiUrl = `https://api.foursquare.com/v3/places/search?ll=${latitude},${longitude}&query=psychiatrist&radius=5000&limit=3`;
+
+            fetch(apiUrl, {
+                method: 'GET',
+                headers: {
+                    'Accept': 'application/json',
+                    'Authorization': 'fsq331Bd8IQ+CUWgCkq6QanvrBbiuyNgH1n5/ESIDjlGMAI='  // Replace with your Foursquare API Key
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                displayPlaces(data);
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+            });
+        }
+
+        // Function to display places on the page
+        function displayPlaces(data) {
+            const placesList = document.getElementById('places-list');
+            placesList.innerHTML = '';
+
+            data.results.forEach(place => {
+                const placeCard = `
+                    <div class="place-card">
+                        <h2>${place.name}</h2>
+                        <p>Address: ${place.location.address}, ${place.location.city}</p>
+                        <p>Distance: ${(place.distance / 1000).toFixed(2)} km</p>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=${place.name}" target="_blank">Get Directions</a>
+                    </div>
+                `;
+                placesList.innerHTML += placeCard;
+            });
+        }
+
+        // Handle location errors
+        function showError(error) {
+            switch(error.code) {
+                case error.PERMISSION_DENIED:
+                    alert("User denied the request for Geolocation.");
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    alert("Location information is unavailable.");
+                    break;
+                case error.TIMEOUT:
+                    alert("The request to get user location timed out.");
+                    break;
+                case error.UNKNOWN_ERROR:
+                    alert("An unknown error occurred.");
+                    break;
+            }
+        }
+
+        // Call the function to get the user's location and fetch data
+        getUserLocation();
+    </script>
+</body>
+</html>

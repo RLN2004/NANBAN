@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helpful Videos</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="version_3.css">
+</head>
+<body>
+
+     <nav class="navbar">
+    <div class="navbar-container">
+      <img src="./IMAGES/LOGO.png" alt="LOGO" id="LOGO">
+      <ul>
+        <li><a href="home.html"><img src="./IMAGES/HOME-ICON.png" class="icon" alt=""></a></li>
+        <li><a href="profile.html"><img src="./IMAGES/PROFILE-ICON.png" class="icon" alt=""></a></li>
+        <li id="logout"><a href="#" onclick="logout()"><img src="./IMAGES/LOGOUT-ICON.png" class="icon" alt=""></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="BODY-CONTAINER">
+    <h1>Helpful Videos</h1>
+    <div class="video-container">
+        <!-- Video 1 -->
+        <div class="video-card">
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/dhYF3AqVhgU" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <p>SOCIAL ANXIETY</p>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-card">
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/AL-xenAuvpk" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <p>STRESS</p>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-card">
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/gyQX6bU1NIY" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <p>DEPRESSION</p>
+        </div>
+
+        <!-- Video 4 -->
+        <div class="video-card">
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/xhN1xEZ0WLQ" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <p>GOOD SLEEP</p>
+        </div>
+    </div>
+
+    </div>
+
+     <!-- Bottom Bar -->
+  <div id="bottom-bar">
+    <button class="bar-btn" id="professional-help" onclick="professional_help()">Proffesinal</button>
+    <button class="bar-btn active" id="yt-videos" onclick="helpful_links()">YouTube</button>
+    <button class="bar-btn" id="chat-bot">Chat</button>
+    <button class="bar-btn" id="mood-monitor">Mood</button>
+    <button class="bar-btn" id="quiz">Quiz</button>
+  </div>
+
+
+  <script src="version_3.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

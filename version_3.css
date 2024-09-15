@@ -7,6 +7,7 @@
     width: 100%;
     background-color: #333;
     z-index: 10;
+    padding-top: 10px;
 }
 
 .bar-btn {
@@ -20,7 +21,7 @@
     transition: all 0.3s ease;
     cursor: pointer;
     position: relative; 
-    z-index: 1; 
+    z-index: 1;
 }
 
 .bar-btn.active {
@@ -32,4 +33,69 @@
 
 .bar-btn:hover {
     background-color: #777;
+}
+
+
+
+#main-content {
+    padding: 20px;
+}
+
+.place-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+}
+
+.place-card h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.place-card p {
+    margin: 5px 0;
+}
+
+.place-card a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.place-card a:hover {
+    text-decoration: underline;
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.video-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+}
+
+.video-card p {
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+.BODY-CONTAINER{
+    margin-top: 15VH;
+    padding-bottom: 20VH;
 }

@@ -20,23 +20,6 @@ function showLogin() {
   }
 }
 
-// Open the chat window
-function openChatWindow() {
-  const chatWindow = document.getElementById('chat-window');
-  
-  if (chatWindow) {
-    chatWindow.style.display = 'block';
-  }
-}
-
-// Close the chat window
-function closeChatWindow() {
-  const chatWindow = document.getElementById('chat-window');
-  
-  if (chatWindow) {
-    chatWindow.style.display = 'none';
-  }
-}
 
 // Register Form Submission
 document.addEventListener('DOMContentLoaded', function () {

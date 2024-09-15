@@ -10,3 +10,11 @@ buttons.forEach((button) => {
     this.classList.add('active');
   });
 });
+
+function professional_help() {
+  window.location.href = 'professinals.html';
+}
+
+function helpful_links() {
+  window.location.href = 'usefullvideo.html';
+}
