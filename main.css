@@ -118,6 +118,7 @@ body {
 #LOGO{
   width: 15vh;
   height: 10vh;
+  padding: 0;
 }
 
 /* Welcome Message */
