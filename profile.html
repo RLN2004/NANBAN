@@ -10,11 +10,11 @@
   <!-- Navigation Bar -->
   <nav class="navbar">
     <div class="navbar-container">
-      <a href="home.html" class="brand-logo">Nanban</a>
+      <a href="#" class="brand-logo"><img src="./IMAGES/CHATBOT-ICON.png" alt=""></a>
       <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="#" onclick="logout()">Logout</a></li>
+        <li><a href="home.html"><img src="./IMAGES/HOME-ICON.png" class="icon" alt=""></a></li>
+        <li><a href="profile.html"><img src="./IMAGES/PROFILE-ICON.png" class="icon" alt=""></a></li>
+        <li id="logout"><a href="#" onclick="logout()"><img src="./IMAGES/LOGOUT-ICON.png" class="icon" alt=""></a></li>
       </ul>
     </div>
   </nav>
@@ -34,8 +34,8 @@
                 </select>
             </p>
             <div class="ACTION-BTN">
-              <button type="button" onclick="cancelEdit()">Cancel</button>
-              <button type="button" onclick="saveProfile()">Save</button>
+              <button type="button" onclick="cancelEdit()" id="CANCEL-BTN">Cancel</button>
+              <button type="button" onclick="saveProfile()" id="SAVE-BTN">Save</button>
             </div>
         </form>
     </div>
