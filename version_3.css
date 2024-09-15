@@ -11,6 +11,9 @@
 }
 
 .bar-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #035580;
     border: none;
     border-radius: 50%;
