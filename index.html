@@ -9,22 +9,44 @@
 <body>
   <div class="container">
     <!-- Registration Form -->
-    <div class="form-container" id="registerForm">
-      <h2>Register</h2>
-      <form id="register">
-        <div>
-          <label for="regEmail">Email:</label>
-          <input type="email" id="regEmail" required>
-        </div>
-        <div>
-          <label for="regPassword">Password:</label>
-          <input type="password" id="regPassword" required>
-        </div>
-        <p id="register-error-message" style="color:red;"></p>
-        <button type="submit">Register</button>
-      </form>
-      <p>Already have an account? <a href="#" onclick="showLogin()">Login here</a></p>
+    <!-- Registration Form -->
+<div class="form-container" id="registerForm">
+  <h2>Register</h2>
+  <form id="register">
+    <div>
+      <label for="regName">Name:</label>
+      <input type="text" id="regName" required>
     </div>
+    <div>
+      <label for="regMobile">Mobile Number:</label>
+      <input type="tel" id="regMobile" required>
+    </div>
+    <div>
+      <label for="regEmail">Email:</label>
+      <input type="email" id="regEmail" required>
+    </div>
+    <div>
+      <label for="regPassword">Password:</label>
+      <input type="password" id="regPassword" required>
+    </div>
+    <div>
+      <label for="regAge">Age:</label>
+      <input type="number" id="regAge" required>
+    </div>
+    <div>
+      <label for="regGender">Gender:</label>
+      <select id="regGender" required>
+        <option value="">Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <p id="register-error-message" style="color:red;"></p>
+    <button type="submit">Register</button>
+  </form>
+  <p>Already have an account? <a href="#" onclick="showLogin()">Login here</a></p>
+</div>
 
     <!-- Login Form -->
     <div class="form-container" id="loginForm" style="display: none;">

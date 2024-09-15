@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="home.html" class="brand-logo">Nanban</a>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Profile Details -->
+<div id="profile">
+        <img src="./IMAGES/PROFILE-ICON.png" id="PROFILE-ICON">
+        <form id="profile-form">
+            <p>Name: <input type="text" id="profileName" name="name"></p>
+            <p>Mobile: <input type="text" id="profileMobile" name="mobile"></p>
+            <p>Email: <input type="email" id="profileEmail" name="email"></p>
+            <p>Age: <input type="number" id="profileAge" name="age"></p>
+            <p>Gender:
+                <select id="profileGender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </p>
+            <div class="ACTION-BTN">
+              <button type="button" onclick="cancelEdit()">Cancel</button>
+              <button type="button" onclick="saveProfile()">Save</button>
+            </div>
+        </form>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

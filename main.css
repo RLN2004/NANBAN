@@ -157,3 +157,75 @@ body {
   flex-grow: 1;
   overflow-y: auto;
 }
+
+
+
+/* Profile Page */
+#profile {
+    max-width: 600px;
+    margin: 20px auto;
+    margin-top: 12vh;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#PROFILE-ICON{
+  width: 15vh;
+  height: 15vh;
+}
+
+.ACTION-BTN{
+  display: flex;
+  justify-content: center;
+}
+
+#profile p {
+    font-size: 2.5vh;
+    margin: 10px 0;
+}
+
+#profile input[type="text"],
+#profile input[type="email"],
+#profile input[type="number"],
+#profile select {
+    font-size: 2.5vh;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+#profile select {
+  margin-bottom: 15PX;
+  font-size: 2VH;
+  font-weight: normal;
+width: 50%
+}
+
+#profile button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 5px 0 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#profile button:hover {
+    background-color: #218838;
+}
+
+#profile button.cancel {
+    background-color: #dc3545;
+}
+
+#profile button.cancel:hover {
+    background-color: #c82333;
+}
