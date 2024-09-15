@@ -4,7 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Project</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Make the chatbot occupy the full screen */
+.be--widget-wrapper {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: 9999 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background-color: rgba(0, 0, 0, 0.7) !important; /* Optional: semi-transparent background */
+}
+
+.be--widget {
+    width: 90% !important;
+    height: 90% !important;
+    max-width: 1200px !important;
+    max-height: 800px !important;
+}
+
+    </style>
 </head>
 <body>
 
