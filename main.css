@@ -211,7 +211,7 @@ body {
 }
 
 #profile p {
-    font-size: 2.5vh;
+    font-size: 2vh;
     margin: 10px 0;
 }
 
@@ -219,7 +219,7 @@ body {
 #profile input[type="email"],
 #profile input[type="number"],
 #profile select {
-    font-size: 2vh;
+    font-size: 1.5vh;
     width: calc(100% - 22px);
     padding: 10px;
     border: 1px solid #ccc;
