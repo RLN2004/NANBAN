@@ -227,12 +227,12 @@ body {
     margin-top: 15px;
 }
 
-#SELECTU,#profile select {
+.SELECTU,#profile select {
   margin-bottom: 15PX;
   width: 100%;
 }
 
-#SELECTU{
+.SELECTU{
   font-size: 2vh;
   width: calc(100% - 15px);
   padding: 10px;

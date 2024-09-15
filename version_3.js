@@ -18,3 +18,7 @@ function professional_help() {
 function helpful_links() {
   window.location.href = 'usefullvideo.html';
 }
+
+function mood() {
+  window.location.href = 'mood.html';
+}

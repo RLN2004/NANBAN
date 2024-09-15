@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="mood.css">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="version_3.css">
+</head>
+<body>
+
+	 <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <img src="./IMAGES/LOGO.png" alt="LOGO" id="LOGO">
+      <ul>
+        <li><a href="home.html"><img src="./IMAGES/HOME-ICON.png" class="icon" alt=""></a></li>
+        <li><a href="profile.html"><img src="./IMAGES/PROFILE-ICON.png" class="icon" alt=""></a></li>
+        <li id="logout"><a href="#" onclick="logout()"><img src="./IMAGES/LOGOUT-ICON.png" class="icon" alt=""></a></li>
+      </ul>
+    </div>
+  </nav>
+
+	<!-- Days of the Week Header -->
+	<div class="calender">
+<div id="days-of-week" class="days-of-week">
+  <div>Sun</div>
+  <div>Mon</div>
+  <div>Tue</div>
+  <div>Wed</div>
+  <div>Thu</div>
+  <div>Fri</div>
+  <div>Sat</div>
+</div>
+	<!-- Calendar Container -->
+<div id="calendar"></div>
+</div>
+
+<!-- Popup Modal for Mood Input -->
+<div id="mood-popup" class="popup">
+  <div class="popup-content">
+    <h3>How was your day?</h3>
+    <form id="mood-form">
+      <label><input class="mm" type="radio" name="mood" value="anger"> Anger</label><br>
+      <label><input class="mm" type="radio" name="mood" value="fear"> Fear</label><br>
+      <label><input class="mm" type="radio" name="mood" value="sad"> Sad</label><br>
+      <label><input class="mm" type="radio" name="mood" value="neutral"> Neutral</label><br>
+      <label><input class="mm" type="radio" name="mood" value="happy"> Happy</label><br>
+      <button type="submit" id="save">Save</button>
+      <button type="button" id="cancel">Cancel</button>
+    </form>
+  </div>
+</div>
+
+  <!-- Bottom Bar -->
+  <div id="bottom-bar">
+    <button class="bar-btn" id="professional-help" onclick="professional_help()"><img class="foot-logo" src="./IMAGES/HOSP-ICON.png" alt="LOGO"></button>
+    <button class="bar-btn" id="yt-videos" onclick="helpful_links()"><img class="foot-logo" src="./IMAGES/VEDIO-ICON.png" alt="LOGO"></button>
+    <button class="bar-btn" id="chat-bot"><img class="foot-logo" src="./IMAGES/BOT-ICON.png" alt="LOGO"></button>
+    <button class="bar-btn active" id="mood-monitor" onclick="mood()"><img class="foot-logo" src="./IMAGES/MOOD-ICON.png" alt="LOGO"></button>
+    <button class="bar-btn" id="quiz"><img class="foot-logo" src="./IMAGES/QUIZ-ICON.png" alt="LOGO"></button>
+  </div>
+
+<script type="text/javascript" src="mood.js"></script>
+<script src="script.js"></script>
+  <script src="version_3.js"></script>
+</body>
+</html>

@@ -99,3 +99,9 @@ h1 {
     margin-top: 15VH;
     padding-bottom: 20VH;
 }
+
+.foot-logo{
+    width: 4VH;
+    height: 4VH;
+    filter: invert(100);
+}
