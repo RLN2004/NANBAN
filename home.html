@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#" class="brand-logo"><img src="./IMAGES/CHATBOT-ICON.png" alt=""></a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="index.html">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Welcome Message -->
+  <div class="welcome-message">
+    <h1>Welcome to the Home Page</h1>
+    <p>We're glad you're here!</p>
+  </div>
+
+  <!-- Chatbot Icon -->
+  <div class="chatbot-icon">
+    <img src="./IMAGES/CHATBOT-ICON.png" alt="Chatbot" onclick="openChatWindow()">
+  </div>
+
+  <!-- Chat Window (Initially Hidden) -->
+  <div id="chat-window" class="chat-window" style="display:none;">
+    <div class="chat-header">
+      <h3>Chat with Nanban Bot</h3>
+      <span onclick="closeChatWindow()">X</span>
+    </div>
+    <div class="chat-body">
+      <!-- Chat content will be added here later -->
+      <p>Welcome! How can I help you today?</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
