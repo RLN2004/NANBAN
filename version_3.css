@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #035580;
+    background-color: #555;
     border: none;
     border-radius: 50%;
     width: 50px;
@@ -35,7 +35,7 @@
 }
 
 .bar-btn:hover {
-    background-color: #035580;
+    background-color: #777;
 }
 
 
@@ -113,4 +113,12 @@ h1 {
     width: 3.7VH;
     height: 3.7VH;
     filter: invert(100);
+}
+
+#myVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
 }
