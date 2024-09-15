@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Quiz</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="version_3.css">
+</head>
+<body>
+
+ <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <img src="./IMAGES/LOGO.png" alt="LOGO" id="LOGO">
+      <ul>
+        <li><a href="home.html"><img src="./IMAGES/HOME-ICON.png" class="icon" alt=""></a></li>
+        <li><a href="profile.html"><img src="./IMAGES/PROFILE-ICON.png" class="icon" alt=""></a></li>
+        <li id="logout"><a href="#" onclick="logout()"><img src="./IMAGES/LOGOUT-ICON.png" class="icon" alt=""></a></li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class="quiz-container">
+        <h2>MENTAL HEALTH QUIZ</h2>
+    <div id="quiz-section"></div>
+<button id="next-question" onclick="nextQuestion()">Next Question</button>
+
+<div id="result" class="hidden">
+    <h2>Your Results</h2>
+    <div id="progress-bars"></div>
+</div>
+
+        
+        <p id="result-category"></p>
+        <button id="retake-quiz" onclick="startQuiz()">Retake Quiz</button>
+    </div>
+
+    <!-- Bottom Bar -->
+  <div id="bottom-bar">
+    <button class="bar-btn" id="professional-help" onclick="professional_help()"><img class="foot-logo" src="./IMAGES/HOSP-ICON.png" alt="LOGO"></button>
+    <button class="bar-btn" id="yt-videos" onclick="helpful_links()"><img class="foot-logo" src="./IMAGES/VEDIO-ICON.png" alt="LOGO"></button>
+    <button class="bar-btn" id="chat-bot"><img class="foot-logo" src="./IMAGES/BOT-ICON.png" alt="LOGO"></button>
+    <button class="bar-btn" id="mood-monitor" onclick="mood()"><img class="foot-logo" src="./IMAGES/MOOD-ICON.png" alt="LOGO"></button>
+    <button class="bar-btn active" id="quiz" onclick="quiz()"><img class="foot-logo" src="./IMAGES/QUIZ-ICON.png" alt="LOGO"></button>
+  </div>
+
+
+    <script src="quiz.js"></script>
+    <script src="script.js"></script>
+     <script src="version_3.js"></script>
+</body>
+</html>

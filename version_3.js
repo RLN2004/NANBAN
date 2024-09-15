@@ -22,3 +22,7 @@ function helpful_links() {
 function mood() {
   window.location.href = 'mood.html';
 }
+
+function quiz() {
+  window.location.href = 'quiz.html';
+}
