@@ -134,16 +134,18 @@ function logout() {
 function saveProfile() {
     const profileName = document.getElementById('profileName').value;
     const profileMobile = document.getElementById('profileMobile').value;
-    const profileEmail = document.getElementById('profileEmail').value;
+    
     const profileAge = document.getElementById('profileAge').value;
     const profileGender = document.getElementById('profileGender').value;
 
     // Store updated user data in localStorage
     localStorage.setItem('userName', profileName);
     localStorage.setItem('userMobile', profileMobile);
-    localStorage.setItem('userEmail', profileEmail);
+    
     localStorage.setItem('userAge', profileAge);
     localStorage.setItem('userGender', profileGender);
+
+    alert("PROFILE UPDATED SUCCESFULLY..!");
 
 }
 
