@@ -107,6 +107,11 @@ body {
   font-weight: bold;
 }
 
+#LOGO{
+  width: 15vh;
+  height: 10vh;
+}
+
 /* Welcome Message */
 .welcome-message {
   background-color: #fff;
