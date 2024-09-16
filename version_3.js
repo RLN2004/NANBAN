@@ -26,3 +26,7 @@ function mood() {
 function quiz() {
   window.location.href = 'quiz.html';
 }
+
+function bot() {
+  window.location.href = 'nanbanbot.html';
+}
